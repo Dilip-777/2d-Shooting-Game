@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto:wght@400;500&display=swap');
+canvas{
+    background-color: rgb(49, 49, 49);
+    max-width: 100%;
+    cursor: crosshair;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.myGame{
+    height: 100vh;
+}
+
+.scoreboard{
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    color: white;
+    font:600 1.2vmax 'Baloo Bhaina 2', cursive;
+    display: none;
+}
+
+form{
+    background-color: rgba(255, 255, 255, 0.158);
+    height: 50vh;
+    width: 50vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+}
+form > select,
+form select option{
+    font-size: 1.2rem;
+    width: 20vw;
+    border: none;
+    text-align: center;
+    font-family:'Baloo Bhaina 2', cursive ;
+    outline: none;
+    padding: 2px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+form input{
+    margin-top: 8px;
+    padding: 4px;
+    width: 10vw;
+    font-size: 1.2rem;
+    font-family: 'Ubuntu', cursive;
+    font-weight: bold;
+    background-color: indianred;
+    color: black;
+    cursor: pointer;
+}
+form input:hover{
+    box-shadow: 0 0 10px white;
+}
+
+.gameover{
+    font-family:'Baloo Bhaina 2', cursive ;
+    font-weight: bold;
+    background-color: rgba(112,112,112,0.041);
+    color: antiquewhite;
+    font-size: 1.5rem;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* .gameover:hover{
+    background-color: grey;
+} */
+.gameover > button{
+    margin-top: 17px;
+    color: white;
+    padding: 12px;
+    font-size: 1.3rem;
+    width: 10vw;
+    opacity: 2;
+    border-radius: 12px;
+    border: 3px solid black;
+    background-color:  rgba(20, 20, 20,0.051);
+    font-family: 'Ubuntu', cursive;
+    font-weight: bold;
+}
+
+.gameover > button:hover{
+    background-color: rgb(15, 15, 15);
+    cursor: pointer;
+    box-shadow: 0 0 7px white;
+}
+
+.highscore{
+    width: 180px;
+    border-radius: 10px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    text-align: center;
+}
